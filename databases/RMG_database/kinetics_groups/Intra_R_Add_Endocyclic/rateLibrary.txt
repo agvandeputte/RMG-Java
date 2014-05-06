@@ -8,8 +8,6 @@ Arrhenius_EP
 // JS, add 144., a dummy number for debugging, need to be deleted!!!!!!!!!!!!!!!!
 
 //		Rn			multiplebond_intra			radadd_intra		Temp.		A			n		a	E0		DA	Dn	Da	DE0	Rank
-//809.	Rn			multiplebond_intra			radadd_intra		300-1500	1E+08		0		0	5		0	0	0	0	5
-
 809.	Rn                      multiplebond_intra                      radadd_intra            300-1500        1.0E+09        0.19    		0       20.0            0       0       0       0       5
 
 // These estimates are probably HO and should not be used

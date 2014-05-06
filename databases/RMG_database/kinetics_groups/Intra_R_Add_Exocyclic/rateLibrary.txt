@@ -7,10 +7,7 @@ Arrhenius_EP
 // f27 intra_radical_addition_form_exocyclic_radical
 
 //		Rn			multiplebond_intra			radadd_intra		Temp.		A			n	a		E0		DA		Dn		Da		DE0		Rank	Comments
-//807.	Rn			multiplebond_intra			radadd_intra		300-1500	1E+10		0		0		5		0		0		0		0		5
-
-// A.G. Vandeputte
-// I just put the head similar to the most standard addition, R6_SSS_D
+// A.G. Vandeputte updating head value similar to the most standard addition, R6_SSS_D
 
 807. Rn                      multiplebond_intra                      radadd_intra            300-1500        1.00E+09        0.21    0       20.0    0       0       0       0       0       Aaron Vandeputte small GA method
 
