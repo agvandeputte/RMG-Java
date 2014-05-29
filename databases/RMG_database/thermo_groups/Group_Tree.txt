@@ -40,6 +40,7 @@ L1: C
 		L3: Cb-H
 		L3: Cb-Os
 		L3: Cb-Ss
+		L3: Cb-Cl
 		L3: Cb-C
 			L4: Cb-Cs
 			L4: Cb-Cds 
@@ -57,6 +58,7 @@ L1: C
 		L3: Ct-H
 		L3: Ct-Os
 		L3: Ct-Ss
+		L3: Ct-Cl
 		L3: Ct-C
 			L4: Ct-Cs
 			L4: Ct-Cds 
@@ -250,7 +252,17 @@ L1: C
             L4: C=S-CbCb
 	L3: CS-CsOs
 
-			
+		L3: Cds-CdClH
+			L4: Cds-CdsClH
+
+		L3: Cds-CdClC
+			L4: Cds-CdsClC
+				L5: Cds-CdsClCs		
+
+		L3: Cds-CdClCl
+			L4: Cds-CdsClCl
+
+	
 		L3: Cds-CdHH
 			L4: Cds-CdsHH
 			L4: Cds-CddHH    
@@ -614,6 +626,9 @@ L1: C
 		L3: Cs-SsHHH
 		L3: Cs-SsSsHH
 		L3: Cs-SsSsSsH
+		L3: Cs-ClHHH
+		L3: Cs-ClClHH
+		L3: Cs-ClClClH
 		L3: Cs-CCHH
 			L4: Cs-CsCsHH
 			L4: Cs-CdsCsHH 
@@ -1892,6 +1907,15 @@ L1: C
             L4: Cs-CtSsHH
             L4: Cs-CbSsHH
 
+        L3: Cs-CClHH
+	    L4: Cs-CsClHH
+
+	L3: Cs-CCClH
+	    L4: Cs-CsCsClH
+
+	L3: Cs-CCCCl
+	    L4: Cs-CsCsCsCl
+
 //////////////////////////////////////////////////////////////////
 // Oxygen Tree
 // Joanna Yu
@@ -1901,7 +1925,7 @@ L1: C
 //////////////////////////////////////////////////////////////////
 //Thermo Tree & Nomenclature for groups with O as the central atom
 //
-//O	Carbon atom, bonds are still not defined
+//O	Oxygen atom, bonds are still not defined
 //Os	Oxygen atom with two single bonds
 //Od	Oxygen atom with one double bond
 //C	Carbon atom, bonds are still not defined
@@ -1971,9 +1995,9 @@ L1: Si
 //////////////////////////////////////////////////////////////////
 //Thermo Tree & Nomenclature for groups with S as the central atom
 //
-//S	Carbon atom, bonds are still not defined
-//Ss	Oxygen atom with two single bonds
-//Sd	Oxygen atom with one double bond
+//S	Sulfur atom, bonds are still not defined
+//Ss	Sulfur atom with two single bonds
+//Sd	Sulfur atom with one double bond
 //C	Carbon atom, bonds are still not defined
 //Cs	Carbon atom with four single bonds
 //Cd	Carbon atom with one double bond and the rest not defined
@@ -2023,4 +2047,36 @@ L1: S
 			L4: Ss-CtCt
 			L4: Ss-CtCb
 			L4: Ss-CbCb
+
+
+//////////////////////////////////////////////////////////////////
+// Chlorine Tree
+// Aaron Vandeputte
+// May 31th, 2014
+//////////////////////////////////////////////////////////////////
+// 
+//
+//////////////////////////////////////////////////////////////////
+//Thermo Tree & Nomenclature for groups with Cl as the central atom
+//
+//Cl    Chlorine atom, bonds are still not defined
+//C     Carbon atom, bonds are still not defined
+//Cs    Carbon atom with four single bonds
+//Cd    Carbon atom with one double bond and the rest not defined
+//Cds   Carbon atom with one double bond and two single bonds
+//Cdd   Carbon atom with two double bonds
+//Ct    Carbon atom with one triple bond and one single bond
+//Cb    Carbon atom belonging to a benzene ring
+//CS    Non central carbon atom bonded with a double bond to a non central S
+//H     Hydrogen atom
+//////////////////////////////////////////////////////////////////
+
+L1: Cl
+	L2: Cl-Cl
+	L2: Cl-H
+	L2: Cl-C
+		L3: Cl-Cs
+		L3: Cl-Cd
+		L3: Cl-Ct
+		L3: Cl-Cb
 

@@ -1231,4 +1231,30 @@
 
 1600	Si	Cs-HHHH
 
+1700	Cl	Cl-C		
+1701	Cl-Cl	0	27.365	4.07	4.215	4.3	4.345	4.395	4.42	4.45	0	0	0	CBS-QB3
+1702	Cl-H	-22.36	44.59	6.95	6.96	6.98	7.04	7.25	7.5	8.03    0       0       0       CBS-QB3
+1703	Cl-C	Cl-Cs
+1704	Cl-Cs	-9.69	27.79	3.62	3.69	3.78	3.83	3.93	3.97	4.04    0       0       0       CBS-QB3
+1705	Cl-Cd	0       0       0       0       0       0       0       0       0       0       0       0       CBS-QB3
+1706	Cl-Ct	0       0       0       0       0       0       0       0       0       0       0       0       CBS-QB3
+1707	Cl-Cb	0       0       0       0       0       0       0       0       0       0       0       0       CBS-QB3
+1710	Cs-ClHHH Cs-CsHHH
+1711	Cs-ClClHH	Cs-ClHHH
+1712	Cs-ClClClH	Cs-ClHHH
+1713	Cs-CClHH	Cs-ClHHH
+1714	Cs-CsClHH	Cs-ClHHH
+1715	Cs-CCClH	Cs-ClHHH
+1716	Cs-CsCsClH	Cs-ClHHH
+1717	Cs-CCCCl	Cs-ClHHH
+1718	Cs-CsCsCsCl	Cs-ClHHH
+1719	Cds-CdClH	Cds-CdsClH
+1720	Cds-CdsClH	Cds-CdsCsH
+1721	Cds-CdClC	Cds-CdsClH
+1722	Cds-CdsClC	Cds-CdsClH
+1723	Cds-CdsClCs	Cds-CdsClH
+1724	Cds-CdClCl	Cds-CdsClH
+1725	Cds-CdsClCl	Cds-CdsClH
+1726	Ct-Cl		Ct-Cs
+1727	Cb-Cl		Cb-Cs
 

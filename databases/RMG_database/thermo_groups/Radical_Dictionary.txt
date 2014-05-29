@@ -1851,3 +1851,7 @@ cyclohexane
 9    H 0 {3,S}
 10    H 0 {3,S}
 11    C 0 {8,S} {5,S}
+
+ClJ
+1 * Cl 1
+

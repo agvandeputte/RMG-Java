@@ -1368,6 +1368,12 @@ public class ChemGraph implements Matchable {
                 s += String.valueOf(S_number);
             }
         }
+        if (Cl_number > 0) {
+            s += "Cl";
+            if (S_number > 1) {
+                s += String.valueOf(Cl_number);
+            }
+        }
         chemicalFormula = s;
         if (radical == 1) {
             chemicalFormula = chemicalFormula + "J";

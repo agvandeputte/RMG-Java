@@ -266,6 +266,8 @@ L1: RJ
 
    L2: SiJ
 
+   L2: ClJ
+
    L2: SJ	 	// any sulfur radical
 	L3: SJ-H		// H-S.
 	L3: SJ-C
