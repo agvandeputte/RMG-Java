@@ -568,11 +568,11 @@ Arrhenius_EP
 // Seal, Prasenjit Oyedepo, Gbenga Truhlar, Donald G
 // doi: 10.1021/jp310910f 
 
-3122 O/H/NonDeC 	O_pri_rad 	300-2000 	4.95E-1 	3.88 	0.00 	-1.632 	0 0 0 0 2 CCSD(T)-F12a/pVTZ with MS-VTST treatment for rotors 
+3122 O/H/NonDeC 	O_pri_rad 	300-2000 	3.95E-2 	4.19 	0.00 	-2.2 	0 0 0 0 2 CCSD(T)-F12a/pVTZ with MS-VTST treatment for rotors 
 3123 C/H2/CsO 		O_pri_rad 	300-2000 	2.155E+4 	2.6 	0.00 	-1.738 	0 0 0 0 2 CCSD(T)-F12a/pVTZ with MS-VTST treatment for rotors
-3124 C/H2/Cs/Cs\O 	O_pri_rad 	300-2000 	2.275E+1 	3.37 	0.00 	-2.638 	0 0 0 0 2 CCSD(T)-F12a/pVTZ with MS-VTST treatment for rotors
-3125 C/H2/Cs/Cs\Cs|O 	O_pri_rad 	300-2000 	3.7E+1 		3.31 	0.00 	-2.189 	0 0 0 0 2 CCSD(T)-F12a/pVTZ with MS-VTST treatment for rotors 
-3126 C/H3/Cs 		O_pri_rad 	300-2000 	0.47E+5 	2.31 	0.00 	0.394 	0 0 0 0 2 CCSD(T)-F12a/pVTZ with MS-VTST treatment for rotors 
+3124 C/H2/Cs/Cs\O 	O_pri_rad 	300-2000 	1.435E+1 	3.42 	0.00 	-1.255 	0 0 0 0 2 CCSD(T)-F12a/pVTZ with MS-VTST treatment for rotors
+3125 C/H2/Cs/Cs\Cs|O 	O_pri_rad 	300-2000 	1.3E+1 		3.44 	0.00 	-2.442 	0 0 0 0 2 CCSD(T)-F12a/pVTZ with MS-VTST treatment for rotors 
+3126 C/H3/Cs 		O_pri_rad 	500-2000 	4.77E+8 	1.152 	0.00 	2.68 	0 0 0 0 2 CCSD(T)-F12a/pVTZ with MS-VTST treatment for rotors 
 
 // SSM estimates
 // C. W. Wu, Y. P. Lee, S. C. Xu, M. C. Lin, J. Phys. Chem. A 111 (2007) 6693-6703.
@@ -2939,3 +2939,23 @@ Arrhenius_EP
 // SSM CBS-QB3 calculations for propargyl + vinylalcohol (RRHO approximation)
 7036   O/H/OneDe C_rad/H2/Ct 500-2500	6.5E-3	4.245	0.00	7.2	0	0	0	0	3	CBS-QB3 (RRHO), SSM
 7037   O_rad/Cd\H_Cd\H2  Cd_Cdd/H2 500-2500	2.1E-3	4.36	0.00	14.2	0	0	0	0	3	CBS-QB3 (RRHO), SSM
+
+// NIST CH3CHO + OH = CH3CO + H2O rate coefficient ref: DOI: 10.1016/S0082-0784(96)80252-9
+// Most estimates seem to be  ~ 3E+12 for 200-350 K range
+7038   CO/H/Cs     O_pri_rad       295-600  2.0E+6  1.80 0.00 -1.3   0	0	0	0	5	NIST SSM
+
+// ref: Role of conformational structures and torsional anharmonicity in controlling chemical reaction rates and
+// relative yields: butanal + HO2 reactions
+// Refitted from four parameter fits to three parameters fits,  
+7039   CO_rad/Cs H2O2 300-2000	4.33E-6	5.09	0.00	1.2	0	0	0	0	2	CCSD(T)/CBS//M08-HX/maug-cc-pVTZ, MSTOR
+7040   C_rad/H/CO/Cs  H2O2  300-2000	1.62E-11	6.525	0.00	2.9	0	0	0	0	2 CCSD(T)/CBS//M08-HX/maug-cc-pVTZ, MSTOR
+7041   C_rad/H/Cs\H2\CO/Cs H2O2  300-2000	0.83E-07	5.407	0.00	0.04	0	0	0	0	2 CCSD(T)/CBS//M08-HX/maug-cc-pVTZ, MSTOR
+7042   C_rad/H/NonDeC  H2O2      300-2000	0.83E-07	5.407	0.00	0.04	0	0	0	0	5 Same as  C_rad/H/Cs\H2\CO/Cs H2O2
+
+// Kinetics of Hydrogen Abstraction Reactions of Butene Isomers by OH Radical
+// s-allylic site from 1-Butene + OH ref: DOI: 10.1021/jp1062786
+7043   C/H2/CdCs  O_pri_rad  300-1500	3.35E+1	3.475	0.00	-2.8	0	0	0	0	3  CCSD(T)/6-311++G(d,p)//BH&HLYP/6-311G(d,p)
+// p-allylic site of 2-butene ref: DOI: 10.1021/jp1062786
+7044   C/H3/Cd\H_Cd\H\Cs O_pri_rad  300-1500	0.203E+1	3.774	0.00	-1.49	0	0	0	0	3  CCSD(T)/6-311++G(d,p)//BH&HLYP/6-311G(d,p)
+// p-allylic site of iso-butene ref: DOI: 10.1021/jp1062786
+7045   C/H3/Cd\Cs_Cd\H2  O_pri_rad  300-1500	0.2E+1	3.594	0.00	-1.07	0	0	0	0	3  CCSD(T)/6-311++G(d,p)//BH&HLYP/6-311G(d,p)
